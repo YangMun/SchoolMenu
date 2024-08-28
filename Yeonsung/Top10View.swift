@@ -4,7 +4,6 @@ import FirebaseFirestore
 struct Top10View: View {
     @State private var topMenuItems: [String] = Array(repeating: "Loading...", count: 10) // Start with placeholder texts
     @State private var isLoading = false // State variable to track loading
-    private let db = Firestore.firestore()
     
     @State private var listener: ListenerRegistration?
     

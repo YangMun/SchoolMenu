@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		34F05E65D97643E60AA430F4 /* Pods_Yeonsung.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA7F82FF7C424D669FDA3239 /* Pods_Yeonsung.framework */; };
+		815E2A0A2C7F408F008340A0 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815E2A092C7F408F008340A0 /* LoadingView.swift */; };
+		815E2A0D2C7F428F008340A0 /* AppStartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815E2A0C2C7F428F008340A0 /* AppStartView.swift */; };
 		8175BC0A2C36EA3E009946B7 /* GoogleMobileAds in Frameworks */ = {isa = PBXBuildFile; productRef = 8175BC092C36EA3E009946B7 /* GoogleMobileAds */; };
 		8183BCAC2C1BDB3A002FEA3D /* YeonsungApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8183BCAB2C1BDB3A002FEA3D /* YeonsungApp.swift */; };
 		8183BCAE2C1BDB3A002FEA3D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8183BCAD2C1BDB3A002FEA3D /* ContentView.swift */; };
@@ -27,11 +29,14 @@
 		81D4564A2C79CDA5000E602C /* Top10View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D456492C79CDA5000E602C /* Top10View.swift */; };
 		81D4564C2C7A2C30000E602C /* CustomLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D4564B2C7A2C30000E602C /* CustomLoadingView.swift */; };
 		81D456662C7C2EB5000E602C /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 81D456652C7C2EB5000E602C /* .gitignore */; };
+		81F1DF7C2C7DEA5A00CEA855 /* FirebaseFunctions in Frameworks */ = {isa = PBXBuildFile; productRef = 81F1DF7B2C7DEA5A00CEA855 /* FirebaseFunctions */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		187EB89EF8FB044B91CB3036 /* Pods-Yeonsung.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yeonsung.debug.xcconfig"; path = "Target Support Files/Pods-Yeonsung/Pods-Yeonsung.debug.xcconfig"; sourceTree = "<group>"; };
 		4AF92A98D587B7CE7FBF3547 /* Pods-Yeonsung.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yeonsung.release.xcconfig"; path = "Target Support Files/Pods-Yeonsung/Pods-Yeonsung.release.xcconfig"; sourceTree = "<group>"; };
+		815E2A092C7F408F008340A0 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		815E2A0C2C7F428F008340A0 /* AppStartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStartView.swift; sourceTree = "<group>"; };
 		8183BCA82C1BDB3A002FEA3D /* Yeonsung.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yeonsung.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8183BCAB2C1BDB3A002FEA3D /* YeonsungApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YeonsungApp.swift; sourceTree = "<group>"; };
 		8183BCAD2C1BDB3A002FEA3D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -60,6 +65,7 @@
 				8175BC0A2C36EA3E009946B7 /* GoogleMobileAds in Frameworks */,
 				8183BCBB2C1BDB4B002FEA3D /* SwiftSoup in Frameworks */,
 				81D456402C7820B9000E602C /* FirebaseAnalytics in Frameworks */,
+				81F1DF7C2C7DEA5A00CEA855 /* FirebaseFunctions in Frameworks */,
 				81D456422C7820B9000E602C /* FirebaseFirestore in Frameworks */,
 				34F05E65D97643E60AA430F4 /* Pods_Yeonsung.framework in Frameworks */,
 			);
@@ -74,6 +80,15 @@
 				FA7F82FF7C424D669FDA3239 /* Pods_Yeonsung.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		815E2A0B2C7F4274008340A0 /* AppStart */ = {
+			isa = PBXGroup;
+			children = (
+				815E2A092C7F408F008340A0 /* LoadingView.swift */,
+				815E2A0C2C7F428F008340A0 /* AppStartView.swift */,
+			);
+			path = AppStart;
 			sourceTree = "<group>";
 		};
 		8183BC9F2C1BDB3A002FEA3D = {
@@ -99,6 +114,7 @@
 		8183BCAA2C1BDB3A002FEA3D /* Yeonsung */ = {
 			isa = PBXGroup;
 			children = (
+				815E2A0B2C7F4274008340A0 /* AppStart */,
 				81D4564D2C7A2C72000E602C /* FunctionGood */,
 				81D4563C2C781D56000E602C /* GoogleService-Info.plist */,
 				8183BCBC2C1BDB5E002FEA3D /* Info.plist */,
@@ -174,6 +190,7 @@
 				8175BC092C36EA3E009946B7 /* GoogleMobileAds */,
 				81D4563F2C7820B9000E602C /* FirebaseAnalytics */,
 				81D456412C7820B9000E602C /* FirebaseFirestore */,
+				81F1DF7B2C7DEA5A00CEA855 /* FirebaseFunctions */,
 			);
 			productName = Yeonsung;
 			productReference = 8183BCA82C1BDB3A002FEA3D /* Yeonsung.app */;
@@ -283,9 +300,11 @@
 				8183BCAE2C1BDB3A002FEA3D /* ContentView.swift in Sources */,
 				81D4564A2C79CDA5000E602C /* Top10View.swift in Sources */,
 				8183BCC32C1BDB89002FEA3D /* MainSelectView.swift in Sources */,
+				815E2A0A2C7F408F008340A0 /* LoadingView.swift in Sources */,
 				81D456462C782BD9000E602C /* VoteView.swift in Sources */,
 				8183BCAC2C1BDB3A002FEA3D /* YeonsungApp.swift in Sources */,
 				8183BCC52C1BDB99002FEA3D /* Crolling.swift in Sources */,
+				815E2A0D2C7F428F008340A0 /* AppStartView.swift in Sources */,
 				8183BCC72C1BDBB4002FEA3D /* TeacherMenuView.swift in Sources */,
 				81D4564C2C7A2C30000E602C /* CustomLoadingView.swift in Sources */,
 				81D456482C78326D000E602C /* MenuDB.swift in Sources */,
@@ -560,6 +579,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 81D4563E2C7820B9000E602C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseFirestore;
+		};
+		81F1DF7B2C7DEA5A00CEA855 /* FirebaseFunctions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 81D4563E2C7820B9000E602C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFunctions;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
