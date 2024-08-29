@@ -45,6 +45,12 @@
 - **주요 작업**:
   - GoogleAdmob 적용
     - 각 배너에 필요한 기능 구현
+
+### 9일차 (Day 9)
+- **주요 작업**:
+  - `LoadingView`, `AppStartView` 추가
+    - `LoadingView`: 앱 시작시 로딩 화면
+    - `AppStartView`: 메인 화면의 데이터가 준비 되면 다음 로직을 수행하도록 연결 다리 작업
    
 
 ## To-Do List
