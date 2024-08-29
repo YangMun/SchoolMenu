@@ -24,7 +24,7 @@ struct AppStartView: View {
         // Example: Data loading, API calls, etc.
         
         // Simulate an initialization task (Replace this with actual code)
-        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
             // Once initialization is done, set isReady to true
             isReady = true
         }

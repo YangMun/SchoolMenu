@@ -101,6 +101,7 @@ func checkAndUpdateMenu() {
                 
                 if lastUpdate == todayDate {
                     print("Menu already updated today")
+                    return // 이미 업데이트되었으므로 함수를 종료
                 } else {
                     updateDailyMenu()
                 }
@@ -111,13 +112,6 @@ func checkAndUpdateMenu() {
             updateDailyMenu()
         }
     }
-}
-
-func getTodayDateString() -> String {
-    let dateFormatter = DateFormatter()
-    dateFormatter.dateFormat = "yyyy-MM-dd"
-    dateFormatter.timeZone = TimeZone(identifier: "Asia/Seoul") // Set to Korea Standard Time
-    return dateFormatter.string(from: Date())
 }
 
 func updateDailyMenu() {
@@ -139,7 +133,7 @@ func updateDailyMenu() {
     // 'votes' 컬렉션의 'dailyMenu' 문서 참조
     let docRef = db.collection("votes").document("dailyMenu")
 
-    // 기존 문서가 존재하는 경우 삭제
+    // 기존 문서가 존재하는 경우 삭제 후 업데이트
     docRef.delete { err in
         if let err = err {
             print("문서 삭제 중 오류 발생: \(err)")
@@ -177,4 +171,11 @@ func runUpdateIfNeeded() {
         UserDefaults.standard.set(true, forKey: "hasLaunchedBefore")
         print("첫 실행, checkAndUpdateMenu() 건너뜀")
     }
+}
+
+func getTodayDateString() -> String {
+    let dateFormatter = DateFormatter()
+    dateFormatter.dateFormat = "yyyy-MM-dd"
+    dateFormatter.timeZone = TimeZone(identifier: "Asia/Seoul") // Set to Korea Standard Time
+    return dateFormatter.string(from: Date())
 }
