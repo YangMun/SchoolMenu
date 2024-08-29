@@ -51,6 +51,11 @@
   - `LoadingView`, `AppStartView` 추가
     - `LoadingView`: 앱 시작시 로딩 화면
     - `AppStartView`: 메인 화면의 데이터가 준비 되면 다음 로직을 수행하도록 연결 다리 작업
+  
+### 10일차 (Day 10)
+- **주요 작업**:
+  - v1.3.2 버전 업그레이드
+  - checkAndUpdateMenu() -> return 추가하여 로직을 빠져 나오게 해야 함
    
 
 ## To-Do List
